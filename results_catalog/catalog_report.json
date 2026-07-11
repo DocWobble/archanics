@@ -1,0 +1,33 @@
+{
+  "events_analyzed": 97,
+  "minimum_station_count": 12,
+  "phi": 1.618033988749895,
+  "h": 1.318859065462452,
+  "aggregate": {
+    "best_spacing": 1.8199999999999998,
+    "best_geometric_mean_rmse_ratio": 1.286076497661006,
+    "h_geometric_mean_rmse_ratio": 1.3451661370401653,
+    "h_median_rmse_ratio": 1.2508857083348377,
+    "events_improved_by_h": 5,
+    "events_worsened_by_h": 92,
+    "h_rank": 54,
+    "spacing_candidates": 102
+  },
+  "cross_event_validation": {
+    "median_selected_spacing": 1.8199999999999998,
+    "selected_spacing_iqr": [
+      0.98,
+      2.04
+    ],
+    "median_unseen_event_ratio_at_selected_spacing": 1.3421992119654145,
+    "fraction_splits_selected_spacing_improved_unseen_events": 0.0,
+    "median_unseen_event_ratio_at_h": 1.3412669844388723,
+    "fraction_splits_h_improved_unseen_events": 0.0
+  },
+  "h_permutation_test": {
+    "observed_mean_log_rmse_ratio": 0.29651752738854126,
+    "null_mean": 0.31182733802945745,
+    "null_standard_deviation": 0.024981804322092908,
+    "one_sided_p_value_for_improvement": 0.2788844621513944
+  }
+}
