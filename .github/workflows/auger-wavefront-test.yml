@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 env:
   MPLBACKEND: Agg
@@ -21,6 +21,8 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: experiment/auger-wavefront-test
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -36,3 +38,10 @@ jobs:
           path: results/
           if-no-files-found: error
           retention-days: 7
+      - name: Commit result summary to experiment branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add results/
+          git commit -m "Record PAO110416 wavefront test results" || exit 0
+          git push origin HEAD:experiment/auger-wavefront-test
