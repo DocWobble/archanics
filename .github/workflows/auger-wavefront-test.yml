@@ -6,12 +6,14 @@ on:
       - main
     paths:
       - research/auger_wavefront_test.py
+      - research/auger_catalog_scan.py
       - .github/workflows/auger-wavefront-test.yml
   push:
     branches:
       - experiment/auger-wavefront-test
     paths:
       - research/auger_wavefront_test.py
+      - research/auger_catalog_scan.py
       - .github/workflows/auger-wavefront-test.yml
   workflow_dispatch:
 
@@ -34,13 +36,17 @@ jobs:
           python-version: "3.12"
       - name: Install analysis dependencies
         run: python -m pip install --upgrade numpy pandas scipy matplotlib requests
-      - name: Run held-out wavefront comparison
+      - name: Run held-out wavefront comparison on PAO110416
         run: python research/auger_wavefront_test.py
+      - name: Run universal spacing scan across catalog
+        run: python research/auger_catalog_scan.py
       - name: Upload reproducible results
         uses: actions/upload-artifact@v4
         with:
           name: auger-wavefront-results
-          path: results/
+          path: |
+            results/
+            results_catalog/
           if-no-files-found: error
           retention-days: 7
       - name: Commit result summary to experiment branch
@@ -48,6 +54,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add results/
-          git commit -m "Record PAO110416 wavefront test results" || exit 0
+          git add results/ results_catalog/
+          git commit -m "Record Auger wavefront test results" || exit 0
           git push origin HEAD:experiment/auger-wavefront-test
