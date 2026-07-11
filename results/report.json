@@ -5,24 +5,24 @@
   "h": 1.318859065462452,
   "metrics": {
     "plane": {
-      "rmse_ns": 118.8373759338088,
-      "mae_ns": 88.27289577720664,
-      "median_abs_error_ns": 72.13233931502236
+      "rmse_ns": 118.83737593380657,
+      "mae_ns": 88.27289577720387,
+      "median_abs_error_ns": 72.1323393149396
     },
     "hyperbolic": {
-      "rmse_ns": 30.916342004551012,
-      "mae_ns": 22.49904642589458,
-      "median_abs_error_ns": 17.389891681392328
+      "rmse_ns": 30.916342004548845,
+      "mae_ns": 22.49904642589275,
+      "median_abs_error_ns": 17.3898916814087
     },
     "hyperbolic+h": {
-      "rmse_ns": 33.01357737716961,
-      "mae_ns": 24.114848511953035,
-      "median_abs_error_ns": 16.991420646430925
+      "rmse_ns": 33.01357737716755,
+      "mae_ns": 24.11484851195126,
+      "median_abs_error_ns": 16.991420646409097
     },
     "hyperbolic+free-spacing": {
-      "rmse_ns": 31.029829178532392,
-      "mae_ns": 22.246005880501208,
-      "median_abs_error_ns": 15.654649854692252
+      "rmse_ns": 31.029829178531322,
+      "mae_ns": 22.246005880499784,
+      "median_abs_error_ns": 15.654649854697709
     }
   },
   "median_selected_hyperbolic_length_m": 30000.0,
@@ -33,11 +33,11 @@
   ],
   "fixed_spacing_scan": {
     "best_spacing": 0.706060606060606,
-    "best_rmse_ns": 28.4418052288575,
-    "h_rmse_ns": 32.984343170197256,
+    "best_rmse_ns": 28.44180522885672,
+    "h_rmse_ns": 32.98434317019478,
     "h_rank_of_100": 83
   },
-  "h_incremental_improvement_ns": -2.0972353726185986,
+  "h_incremental_improvement_ns": -2.097235372618705,
   "permutation_p_value": 0.760797342192691,
   "sdrec": {
     "theta": 78.2,
@@ -51,7 +51,7 @@
     "energy": 90.6
   },
   "waveform_width_correlation_with_radius": {
-    "r": -0.39917172929981526,
-    "p": 0.0015810719898134437
+    "r": -0.3991717292998153,
+    "p": 0.0015810719898134333
   }
 }
