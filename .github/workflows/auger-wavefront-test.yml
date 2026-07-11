@@ -1,6 +1,12 @@
 name: Auger real wavefront test
 
 on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - research/auger_wavefront_test.py
+      - .github/workflows/auger-wavefront-test.yml
   push:
     branches:
       - experiment/auger-wavefront-test
@@ -39,6 +45,7 @@ jobs:
           if-no-files-found: error
           retention-days: 7
       - name: Commit result summary to experiment branch
+        if: github.event_name == 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
