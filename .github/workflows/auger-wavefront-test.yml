@@ -32,7 +32,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: pip
       - name: Install analysis dependencies
         run: python -m pip install --upgrade numpy pandas scipy matplotlib requests
       - name: Run held-out wavefront comparison
