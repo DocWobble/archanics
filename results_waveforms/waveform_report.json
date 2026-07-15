@@ -1,0 +1,70 @@
+{
+  "phi": 1.618033988749895,
+  "h": 1.318859065462452,
+  "responses": {
+    "width_ns": {
+      "events_analyzed": 79,
+      "best_spacing": 2.1,
+      "best_geometric_mean_ratio": 1.057164391424277,
+      "h_geometric_mean_ratio": 1.0773919462548212,
+      "h_median_ratio": 1.0556123989736335,
+      "events_improved_by_h": 26,
+      "events_worsened_by_h": 53,
+      "h_rank": 23,
+      "spacing_candidates": 102,
+      "h_permutation_p_value": 0.20987654320987653,
+      "cross_event_median_selected_spacing": 2.08,
+      "cross_event_selected_spacing_iqr": [
+        1.3,
+        2.12
+      ],
+      "cross_event_median_unseen_ratio": 1.104474475571136,
+      "cross_event_fraction_improved": 0.0,
+      "h_cross_event_median_unseen_ratio": 1.0767521684782704,
+      "h_cross_event_fraction_improved": 0.035
+    },
+    "skew_fraction": {
+      "events_analyzed": 79,
+      "best_spacing": 0.9,
+      "best_geometric_mean_ratio": 1.0769947708374052,
+      "h_geometric_mean_ratio": 1.1245394094053152,
+      "h_median_ratio": 1.0707258018267596,
+      "events_improved_by_h": 19,
+      "events_worsened_by_h": 60,
+      "h_rank": 40,
+      "spacing_candidates": 102,
+      "h_permutation_p_value": 0.24691358024691357,
+      "cross_event_median_selected_spacing": 0.92,
+      "cross_event_selected_spacing_iqr": [
+        0.88,
+        1.6800000000000002
+      ],
+      "cross_event_median_unseen_ratio": 1.120213513699521,
+      "cross_event_fraction_improved": 0.0,
+      "h_cross_event_median_unseen_ratio": 1.1226082142059068,
+      "h_cross_event_fraction_improved": 0.0
+    },
+    "peak_offset_ns": {
+      "events_analyzed": 79,
+      "best_spacing": 1.88,
+      "best_geometric_mean_ratio": 1.0790576996750725,
+      "h_geometric_mean_ratio": 1.155468806025888,
+      "h_median_ratio": 1.0963042940730379,
+      "events_improved_by_h": 10,
+      "events_worsened_by_h": 69,
+      "h_rank": 91,
+      "spacing_candidates": 102,
+      "h_permutation_p_value": 0.9382716049382716,
+      "cross_event_median_selected_spacing": 1.8599999999999999,
+      "cross_event_selected_spacing_iqr": [
+        0.8200000000000001,
+        1.9
+      ],
+      "cross_event_median_unseen_ratio": 1.128155057564511,
+      "cross_event_fraction_improved": 0.0,
+      "h_cross_event_median_unseen_ratio": 1.155959888133522,
+      "h_cross_event_fraction_improved": 0.0
+    }
+  },
+  "failures": []
+}
